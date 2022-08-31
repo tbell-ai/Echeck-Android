@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/myupdate_medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/border_radius"
+        android:elevation="30dp"
+        android:orientation="vertical"
+        android:padding="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include">
+
+        <TextView
+            android:id="@+id/nickname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/notosanscjkkr_medium"
+            android:includeFontPadding="false"
+            android:text="닉네임"
+            android:textColor="@color/blackText"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/nickname_update"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_input_task"
+            android:fontFamily="@font/notosanscjkkr_medium"
+            android:hint="닉네임은 2~6자 한글, 영문으로 입력"
+            android:textSize="10sp"
+            android:includeFontPadding="false"
+            android:inputType="text"
+            android:paddingLeft="12dp"
+            android:maxLength="6"
+            android:textColor="@color/blackText"
+            android:textColorHint="#707070" />
+
+        <TextView
+            android:id="@+id/before_elect_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/notosanscjkkr_medium"
+            android:includeFontPadding="false"
+            android:text="전월 지침"
+            android:textColor="@color/blackText"
+            android:textColorHint="@color/grayText"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/before_elect_update"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_input_task"
+            android:fontFamily="@font/notosanscjkkr_medium"
+            android:hint="가장 최근 고지서의 당월지침계수 숫자로 입력"
+            android:textSize="10sp"
+            android:includeFontPadding="false"
+            android:inputType="number"
+            android:paddingLeft="12dp"
+            android:maxLength="5"
+            android:textColor="@color/blackText"
+            android:textColorHint="@color/grayText" />
+
+        <TextView
+            android:id="@+id/elect_period"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/notosanscjkkr_medium"
+            android:includeFontPadding="false"
+            android:text="사용(부과) 기간"
+            android:textColor="@color/blackText"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/elect_period_update"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_input_task"
+            android:fontFamily="@font/notosanscjkkr_medium"
+            android:hint="가장 최근 고지서의 사용 기간 종료일자만 입력"
+            android:textSize="10sp"
+            android:includeFontPadding="false"
+            android:inputType="date"
+            android:clickable="true"
+            android:focusable="false"
+            android:paddingLeft="12dp"
+            android:textColor="@color/blackText"
+            android:textColorHint="@color/grayText" />
+
+        <TextView
+            android:id="@+id/elect_use"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/notosanscjkkr_medium"
+            android:includeFontPadding="false"
+            android:text="용도 선택"
+            android:textColor="@color/blackText"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/use_update"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_spinner_task"
+            android:entries="@array/use_items"
+            android:paddingLeft="4dp"
+            android:textColor="@color/blackText"
+            android:theme="@style/SpinnerStyle" />
+
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:stretchColumns="*"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <TableRow>
+            <Button
+                android:id="@+id/update1_next"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_column="1"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:includeFontPadding="false"
+                android:background="@drawable/next_button_radius"
+                android:text="다음"
+                android:textSize="14sp"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+        </TableRow>
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

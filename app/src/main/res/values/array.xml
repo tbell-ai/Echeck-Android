@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="use_items">
+        <item>주택용(저압)</item>
+        <item>주택용(고압)</item>
+        <item>1주택 수 가구</item>
+    </string-array>
+
+    <string-array name="house_items">
+        <item>주거용</item>
+        <item>비주거용</item>
+    </string-array>
+
+    <string-array name="discount_item1">
+        <item>해당사항없음</item>
+        <item>5인이상 가구</item>
+        <item>출산 가구</item>
+        <item>3자녀이상 가구</item>
+        <item>생명유지장치</item>
+    </string-array>
+
+    <string-array name="discount_item2">
+        <item>해당사항없음</item>
+        <item>독립유공자</item>
+        <item>국가유공자</item>
+        <item>5.18민주유공자</item>
+        <item>장애인</item>
+        <item>기초생활(생계, 의료)</item>
+        <item>기초생활(주거, 교육)</item>
+        <item>차상위계층</item>
+    </string-array>
+
+    <string-array name="house_discount_item1">
+        <item>해당사항없음</item>
+        <item>5인이상 가구</item>
+        <item>출산 가구</item>
+        <item>3자녀이상 가구</item>
+        <item>생명유지장치</item>
+    </string-array>
+
+    <string-array name="house_discount_item2">
+        <item>해당사항없음</item>
+        <item>독립유공자</item>
+        <item>국가유공자</item>
+        <item>5.18민주유공자</item>
+        <item>장애인</item>
+        <item>기초생활(생계, 의료)</item>
+        <item>기초생활(주거, 교육)</item>
+        <item>차상위계층</item>
+    </string-array>
+
+    <string-array name="house_count">
+        <item>1가구</item>
+        <item>2가구</item>
+        <item>3가구</item>
+        <item>4가구</item>
+        <item>5가구</item>
+        <item>6가구</item>
+        <item>7가구</item>
+        <item>8가구</item>
+        <item>9가구</item>
+    </string-array>
+
+    <string-array name="machine_item">
+        <item>기계식 전력량계</item>
+        <item>전자식 전력량계(E-type)</item>
+    </string-array>
+
+    <string-array name="home_product_list">
+        <item>제품 선택</item>
+        <item>TV</item>
+        <item>컴퓨터 본체</item>
+        <item>컴퓨터 모니터</item>
+        <item>세탁기</item>
+        <item>청소기</item>
+        <item>정수기</item>
+        <item>냉장고</item>
+        <item>전기밥솥(보온)</item>
+        <item>전기밥솥(취사)</item>
+        <item>김치냉장고</item>
+        <item>공기청정기</item>
+        <item>전자레인지</item>
+        <item>건조기</item>
+        <item>헤어드라이기</item>
+        <item>전기다리미</item>
+        <item>선풍기</item>
+        <item>에어컨</item>
+        <item>전기장판</item>
+        <item>안마의자</item>
+        <item>스타일러</item>
+    </string-array>
+
+    <string-array name="cycle_list">
+        <item>사용주기 선택</item>
+        <item>주 1회</item>
+        <item>주 1 ~ 2회</item>
+        <item>주 3 ~ 4회</item>
+        <item>주 5 ~ 6회</item>
+        <item>매일 사용</item>
+    </string-array>
+
+    <string-array name="hour_list">
+        <item>시간선택</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+    </string-array>
+</resources>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.activity.DormancyActivity">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/app_name"
+        android:layout_width="180dp"
+        android:layout_height="70dp"
+        android:background="@drawable/app_name"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include" />
+
+    <TextView
+        android:id="@+id/id_search_des"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/notosanscjkkr_medium"
+        android:includeFontPadding="false"
+        android:text="E-Check 가입시, 입력한 아이디와 이메일 정보를 통해 휴면 계정을 해지할 수 있습니다. \n입력하신 이메일로 휴면 해지 링크를 보내드립니다."
+        android:textAlignment="textStart"
+        android:textColor="@color/blackText"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/app_name" />
+
+    <EditText
+        android:id="@+id/search_id_input"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/bg_input_task"
+        android:fontFamily="@font/notosanscjkkr_medium"
+        android:hint="가입시 입력한 아이디 입력"
+        android:includeFontPadding="false"
+        android:inputType="text"
+        android:paddingLeft="12dp"
+        android:textColor="@color/blackText"
+        android:textColorHint="#707070"
+        android:textSize="12sp"
+        android:elevation="10dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_search_des" />
+
+    <EditText
+        android:id="@+id/search_email_input"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/bg_input_task"
+        android:fontFamily="@font/notosanscjkkr_medium"
+        android:hint="가입시 입력한 이메일 입력"
+        android:includeFontPadding="false"
+        android:inputType="text"
+        android:paddingLeft="12dp"
+        android:textColor="@color/blackText"
+        android:textColorHint="#707070"
+        android:textSize="12sp"
+        android:elevation="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_id_input" />
+
+    <Button
+        android:id="@+id/search_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="#54279d"
+        android:elevation="10dp"
+        android:fontFamily="@font/notosanscjkkr_medium"
+        android:includeFontPadding="false"
+        android:padding="10dp"
+        android:text="휴면해지 이메일 발송"
+        android:textColor="#fff"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_email_input" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

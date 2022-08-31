@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2359375" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/drawable/bg_input_sel.xml" value="0.2359375" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/drawable/bg_input_task.xml" value="0.2359375" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/drawable/bg_input_unsel.xml" value="0.2359375" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/drawable/bg_spinner_inactive.xml" value="0.2359375" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/drawable/bg_spinner_sel.xml" value="0.2359375" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/drawable/bg_spinner_task.xml" value="0.2359375" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/drawable/bg_spinner_unsel.xml" value="0.2359375" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/drawable/border_bottom.xml" value="0.25416666666666665" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/drawable/border_radius.xml" value="0.25416666666666665" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/drawable/border_radius2.xml" value="0.25416666666666665" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/drawable/btn_init.xml" value="0.35520833333333335" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/drawable/calc_main_border.xml" value="0.2359375" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/drawable/calc_sub_border.xml" value="0.2359375" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/drawable/checkbox_custom.xml" value="0.2359375" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/drawable/elect_border.xml" value="0.2359375" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/drawable/ic_baseline_add.xml" value="0.2359375" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/drawable/ic_baseline_close_32.xml" value="0.21354166666666666" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/drawable/ic_baseline_keyboard_arrow_down_24.xml" value="0.2359375" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/drawable/ic_baseline_keyboard_arrow_right_24.xml" value="0.2359375" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/drawable/ic_baseline_keyboard_arrow_up_24.xml" value="0.2359375" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/drawable/ic_baseline_open_in_new_30.xml" value="0.2359375" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/drawable/ic_guide_next.xml" value="0.2359375" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/drawable/ic_guide_prev.xml" value="0.2359375" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2359375" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/drawable/ic_menu.xml" value="0.2359375" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/drawable/ic_viewfinder.xml" value="0.3527777777777778" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/drawable/inactive_button_radius.xml" value="0.35520833333333335" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/drawable/main_menu_ic.xml" value="0.2359375" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/drawable/next_button_radius.xml" value="0.2359375" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/drawable/prev_button_radius.xml" value="0.24739583333333334" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/drawable/rectangle_border.xml" value="0.2359375" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/drawable/tab_background.xml" value="0.2359375" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/drawable/tab_background_selected.xml" value="0.2359375" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/drawable/tab_background_unselected.xml" value="0.2359375" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/activity_account.xml" value="0.3390625" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/activity_agree.xml" value="0.26992753623188404" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/activity_before_elect.xml" value="0.1897644927536232" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/activity_camera.xml" value="0.1757852077001013" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/activity_company_info.xml" value="0.1897644927536232" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/activity_dormancy.xml" value="0.3390625" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/activity_energy.xml" value="0.23541666666666666" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/activity_energy_result.xml" value="0.24166666666666667" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/activity_faq.xml" value="0.1897644927536232" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/activity_home_product.xml" value="0.20572916666666666" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/activity_info.xml" value="0.192481884057971" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/activity_intro.xml" value="0.17806484295845998" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/activity_join.xml" value="0.3390625" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/activity_login.xml" value="0.33" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/activity_machine.xml" value="0.1897644927536232" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/activity_main.xml" value="0.192481884057971" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/activity_mypage.xml" value="0.1911231884057971" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/activity_permission.xml" value="0.33" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/activity_realtime_charge.xml" value="0.1897644927536232" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/activity_saving_guide.xml" value="0.1757852077001013" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/activity_setting.xml" value="0.20572916666666666" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/activity_splash.xml" value="0.192481884057971" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/activity_usage.xml" value="0.1897644927536232" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/analysis_detail_dailog.xml" value="0.21979166666666666" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/analysis_list_view.xml" value="0.21979166666666666" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/analysis_target_dailog.xml" value="0.36614583333333334" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/camera_guide_dialog.xml" value="0.192481884057971" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/content_setting.xml" value="0.20572916666666666" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/current_dailog.xml" value="0.21979166666666666" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/delete_dialog.xml" value="0.18614130434782608" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/elect_dialog.xml" value="0.192481884057971" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/fragment_account1.xml" value="0.3390625" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/fragment_account2.xml" value="0.3390625" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/fragment_camera.xml" value="0.1757852077001013" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/fragment_guide1.xml" value="0.1757852077001013" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/fragment_guide2.xml" value="0.1757852077001013" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/fragment_guide3.xml" value="0.1757852077001013" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/fragment_guide4.xml" value="0.1757852077001013" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/fragment_guide5.xml" value="0.1757852077001013" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/fragment_home_product_input.xml" value="0.20572916666666666" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/fragment_home_product_list.xml" value="0.3390625" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/fragment_home_product_update.xml" value="0.3390625" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/fragment_home_product_view.xml" value="0.3390625" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/fragment_info1.xml" value="0.5" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/fragment_info2.xml" value="0.5" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/fragment_info4.xml" value="0.5" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/fragment_info5.xml" value="0.5" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/fragment_intro1.xml" value="0.17806484295845998" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/fragment_intro2.xml" value="0.1911231884057971" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/fragment_intro3.xml" value="0.1911231884057971" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/fragment_intro4.xml" value="0.1911231884057971" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/fragment_measure.xml" value="0.23125" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/fragment_my_info.xml" value="0.3614583333333333" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/fragment_mypage1.xml" value="0.1911231884057971" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/fragment_mypage2.xml" value="0.26992753623188404" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/fragment_myupdate1.xml" value="0.25" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/fragment_myupdate2.xml" value="0.26992753623188404" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/fragment_myupdate4.xml" value="0.1897644927536232" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/fragment_myupdate5.xml" value="0.26992753623188404" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/fragment_result.xml" value="0.25" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/fragment_second.xml" value="0.20572916666666666" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/fragment_usage1.xml" value="0.1875" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/fragment_usage2.xml" value="0.1875" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/home_product_list_view.xml" value="0.20572916666666666" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/house_list_view.xml" value="0.18614130434782608" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/house_update_view.xml" value="0.18614130434782608" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/info_dialog.xml" value="0.26992753623188404" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/info_guide_dialog.xml" value="0.1897644927536232" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/list_detail_dialog.xml" value="0.1897644927536232" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/measure_list_view.xml" value="0.36614583333333334" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/measure_result_dialog.xml" value="0.21979166666666666" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/myupdate_medium.xml" value="0.26992753623188404" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/nav_header.xml" value="0.1911231884057971" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/product_delete_dialog.xml" value="0.20572916666666666" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/product_dialog.xml" value="0.24166666666666667" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/toolbar.xml" value="0.192481884057971" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/usage_list_view.xml" value="0.1875" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/layout/use_update_dialog.xml" value="0.21979166666666666" />
+        <entry key="..\:/android_project/tbellecheck/app/src/main/res/menu/main_menu.xml" value="0.23541666666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

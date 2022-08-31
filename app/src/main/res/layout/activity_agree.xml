@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_bg"
+    tools:context=".views.activity.AgreeActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="330dp"
+        android:layout_height="420dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:elevation="26dp"
+        android:background="#FFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/agree_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/notosanscjkkr_black"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="이용약관"
+            android:textColor="#303539"
+            android:textSize="26dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/agree_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/agree_title">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="20dp"
+                    android:background="@drawable/border_bottom"
+                    android:layout_marginBottom="20dp">
+
+                    <CheckBox
+                        android:id="@+id/agree_all_check"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/checkbox_custom"
+                        android:button="@null" />
+
+                    <TextView
+                        android:id="@+id/all_check_des"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_toRightOf="@+id/agree_all_check"
+                        android:fontFamily="@font/notosanscjkkr_medium"
+                        android:gravity="left"
+                        android:includeFontPadding="false"
+                        android:text="모든 약관에 동의합니다."
+                        android:textColor="#303539"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="20dp"
+                    android:background="@drawable/border_bottom">
+
+                    <CheckBox
+                        android:id="@+id/mandatory_check"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/checkbox_custom"
+                        android:button="@null" />
+
+                    <TextView
+                        android:id="@+id/mandatory_des"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_toRightOf="@+id/mandatory_check"
+                        android:fontFamily="@font/notosanscjkkr_medium"
+                        android:gravity="left"
+                        android:includeFontPadding="false"
+                        android:text="[필수] 서비스 이용약관"
+                        android:textColor="#303539"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/agree_view_btn"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/ic_baseline_keyboard_arrow_down_24" />
+
+                </RelativeLayout>
+
+                <ScrollView
+                    android:id="@+id/agree_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:padding="5dp"
+                    android:orientation="vertical"
+                    android:gravity ="center"
+                    android:visibility="gone"
+                    android:fillViewport="true"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="10sp"
+                        android:textColor="#777"
+                        android:gravity="left"
+                        android:text="@string/agree_detail" />
+
+                </ScrollView>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/agree_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="다음"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:background="@color/inactiveColor"
+            android:enabled="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,80 @@
+apply plugin: 'com.android.application'
+
+android {
+    def APP_NAME = "E-Check"
+
+    compileSdkVersion 30
+    buildToolsVersion "30.0.2"
+
+    defaultConfig {
+        applicationId "kr.co.tbell.echeck"
+        minSdkVersion 26
+        targetSdkVersion 30
+        versionCode 6
+        versionName "2.2.2"
+
+        testInstrumentationRunner "android3x.test.runner.AndroidJUnitRunner"
+
+        archivesBaseName = APP_NAME
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+            applicationVariants.all { variant ->
+                if (variant.buildType.name.equals("release")) {
+                    variant.outputs.all {
+                        def date = new java.text.SimpleDateFormat("yyyyMMdd").format(new Date())
+                        outputFileName = APP_NAME + "_${variant.name}_r${variant.versionCode}_v${variant.versionName}_${date}.apk"
+                    }
+                }
+            }
+        }
+    }
+
+    compileOptions {
+        targetCompatibility = "8"
+        sourceCompatibility = "8"
+    }
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+repositories {
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.core:core:1.2.0'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+
+    implementation "androidx.recyclerview:recyclerview:1.1.0"
+    implementation "androidx.cardview:cardview:1.0.0"
+    implementation 'androidx.viewpager2:viewpager2:1.0.0'
+    implementation 'com.google.android.material:material:1.2.1'
+
+    // Retrofit HTTP Lib
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+
+    // GSON Json parser Lib
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+
+    // Pie Chart Lib
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+
+    // Version Check HTML Parser
+    implementation 'org.jsoup:jsoup:1.13.1'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.navigation:navigation-fragment:2.3.5'
+    implementation 'androidx.navigation:navigation-ui:2.3.5'
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    compileOnly 'com.google.android.wearable:wearable:2.5.0'
+}

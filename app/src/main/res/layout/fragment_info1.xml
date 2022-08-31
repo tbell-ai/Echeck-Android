@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.fragment.info.Info1Fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/border_radius"
+        android:paddingBottom="30dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="15dp"
+        android:elevation="30dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/info_guide"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/q_button"
+                android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/nickname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/notosanscjkkr_medium"
+            android:includeFontPadding="false"
+            android:maxLength="6"
+            android:text="닉네임"
+            android:textColor="@color/blackText"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/nickname_input"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_input_task"
+            android:fontFamily="@font/notosanscjkkr_medium"
+            android:includeFontPadding="false"
+            android:hint="닉네임은 2~6자 한글, 영문으로 입력"
+            android:textSize="10sp"
+            android:inputType="text"
+            android:paddingLeft="12dp"
+            android:maxLength="6"
+            android:textColor="@color/blackText"
+            android:textColorHint="#707070"/>
+
+        <TextView
+            android:id="@+id/before_elect_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/notosanscjkkr_medium"
+            android:includeFontPadding="false"
+            android:text="전월 지침"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@color/blackText"
+            android:textColorHint="@color/grayText" />
+
+        <EditText
+            android:id="@+id/before_elect_input"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/notosanscjkkr_medium"
+            android:includeFontPadding="false"
+            android:background="@drawable/bg_input_task"
+            android:hint="가장 최근 고지서의 당월지침계수 숫자로 입력"
+            android:textSize="10sp"
+            android:inputType="number"
+            android:paddingLeft="12dp"
+            android:maxLength="5"
+            android:textColor="@color/blackText"
+            android:textColorHint="@color/grayText" />
+
+        <TextView
+            android:id="@+id/elect_period"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/notosanscjkkr_medium"
+            android:includeFontPadding="false"
+            android:text="사용(부과) 기간"
+            android:textColor="@color/blackText"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/elect_period_input"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/notosanscjkkr_medium"
+            android:includeFontPadding="false"
+            android:background="@drawable/bg_input_task"
+            android:hint="가장 최근 고지서의 사용 기간 종료일자만 입력"
+            android:textSize="10sp"
+            android:inputType="date"
+            android:clickable="true"
+            android:focusable="false"
+            android:paddingLeft="12dp"
+            android:textColor="@color/blackText"
+            android:textColorHint="@color/grayText" />
+
+        <TextView
+            android:id="@+id/elect_use"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/notosanscjkkr_medium"
+            android:includeFontPadding="false"
+            android:text="용도 선택"
+            android:textColor="@color/blackText"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/use_input"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_spinner_task"
+            android:entries="@array/use_items"
+            android:paddingLeft="4dp"
+            android:textColor="@color/blackText"
+            android:theme="@style/SpinnerStyle"/>
+
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:stretchColumns="*"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <TableRow>
+            <Button
+                android:id="@+id/info1_next"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_column="1"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:includeFontPadding="false"
+                android:background="@drawable/inactive_button_radius"
+                android:text="다음"
+                android:textSize="14sp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:enabled="false"/>
+        </TableRow>
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

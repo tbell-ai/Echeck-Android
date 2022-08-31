@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/myupdate_medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/border_radius"
+        android:elevation="30dp"
+        android:orientation="vertical"
+        android:padding="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/border_bottom"
+            android:gravity="left"
+            android:paddingLeft="5dp"
+            android:paddingBottom="15dp"
+            android:text="가구 할인 상세 정보"
+            android:textColor="#333"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/elect_discount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/notosanscjkkr_medium"
+            android:includeFontPadding="false"
+            android:text="할인 정보"
+            android:textColor="@color/blackText"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/discount_sub1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/notosanscjkkr_medium"
+            android:includeFontPadding="false"
+            android:text="대가족/생명유지장치 요금"
+            android:textColor="@color/grayText"
+            android:textSize="9sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/house_discount1_update"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/bg_spinner_task"
+            android:entries="@array/house_discount_item1"
+            android:paddingLeft="4dp"
+            android:textColor="@color/blackText"
+            android:theme="@style/SpinnerStyle" />
+
+        <TextView
+            android:id="@+id/discount_sub2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/notosanscjkkr_medium"
+            android:includeFontPadding="false"
+            android:text="복지 할인 요금"
+            android:textColor="@color/grayText"
+            android:textSize="9sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/house_discount2_update"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/bg_spinner_task"
+            android:entries="@array/house_discount_item2"
+            android:paddingLeft="4dp"
+            android:textColor="@color/blackText"
+            android:theme="@style/SpinnerStyle" />
+
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:stretchColumns="*"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <TableRow>
+            <Button
+                android:id="@+id/update5_prev"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_column="0"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:includeFontPadding="false"
+                android:background="@drawable/prev_button_radius"
+                android:text="이전"
+                android:textSize="14sp"
+                android:textColor="#fff"
+                android:textStyle="bold"/>
+            <Button
+                android:id="@+id/update5_success"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_column="1"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:includeFontPadding="false"
+                android:background="@drawable/next_button_radius"
+                android:text="저장"
+                android:textSize="14sp"
+                android:textColor="#fff"
+                android:textStyle="bold"/>
+        </TableRow>
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

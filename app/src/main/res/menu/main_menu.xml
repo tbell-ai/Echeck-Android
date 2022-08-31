@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_cacul"
+            android:title="실시간 요금 계산"
+            android:icon="@drawable/menu_ic_calc"/>
+        <item
+            android:id="@+id/nav_uselist"
+            android:title="월별 사용량"
+            android:icon="@drawable/menu_ic_usage"/>
+        <item
+            android:id="@+id/nav_analysis"
+            android:title="전력사용 패턴 분석"
+            android:icon="@drawable/munu_ic_analysis"/>
+        <item
+            android:id="@+id/nav_mypage"
+            android:title="마이 페이지"
+            android:icon="@drawable/munu_ic_mypage"/>
+        <item
+            android:id="@+id/nav_guide"
+            android:title="전기세 절약 가이드"
+            android:icon="@drawable/munu_ic_guide"/>
+        <item
+            android:id="@+id/nav_appinfo"
+            android:title="앱 정보"
+            android:icon="@drawable/munu_ic_info"/>
+        <item
+            android:id="@+id/nav_faq"
+            android:title="FAQ"
+            android:icon="@drawable/munu_ic_faq"/>
+    </group>
+
+</menu>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sub_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="410dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/border_radius2"
+        android:elevation="30dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/mesure_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/border_bottom"
+            android:fontFamily="@font/notosanscjkkr_black"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:paddingBottom="8dp"
+            android:text="전력량계 인식 결과"
+            android:textColor="@color/blackText"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/mesure_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/border_bottom"
+            android:fontFamily="@font/notosanscjkkr_black"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:paddingBottom="20dp"
+            android:text="0 0 0 0"
+            android:textColor="@color/grayText"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/mesure_sub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:fontFamily="@font/notosanscjkkr_medium"
+            android:gravity="right"
+            android:includeFontPadding="false"
+            android:text="전력량계 측정 결과가 정확하지 않을 경우\n아래 입력란에 수기 입력 또는 재촬영 바랍니다."
+            android:textColor="@color/grayText"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/nickname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="25dp"
+            android:fontFamily="@font/notosanscjkkr_medium"
+            android:includeFontPadding="false"
+            android:text="※ 수기 입력"
+            android:textColor="@color/blackText"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/elect_input"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/bg_input_task"
+            android:fontFamily="@font/notosanscjkkr_medium"
+            android:hint="전력량계에 표시된 숫자를 동일하게 입력해주세요."
+            android:includeFontPadding="false"
+            android:inputType="number"
+            android:paddingLeft="12dp"
+            android:textColor="@color/blackText"
+            android:textColorHint="#707070"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/go_camera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="25dp"
+            android:background="#eee"
+            android:fontFamily="@font/notosanscjkkr_medium"
+            android:includeFontPadding="false"
+            android:text="전력량계 재촬영 하기"
+            android:textColor="@color/blackText"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/go_calc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="예상 요금 계산하기"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="#FFF"
+        android:background="@drawable/next_button_radius"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

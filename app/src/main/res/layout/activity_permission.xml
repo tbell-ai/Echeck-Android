@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_bg"
+    tools:context=".views.activity.PermissionActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="330dp"
+        android:layout_height="420dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:elevation="26dp"
+        android:background="#FFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/permission_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                android:fontFamily="@font/notosanscjkkr_black"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="앱 접근권한 안내"
+                android:textColor="#303539"
+                android:textSize="22sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="'E-Check' 사용을 위하여\n아래와 같은 권한이 필요합니다."
+                android:textColor="#6f6f6f"
+                android:textSize="12sp" />
+
+            <View
+                android:id="@+id/center_line"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="14dp"
+                android:background="#aaa" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="12dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/permission_title">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:includeFontPadding="false"
+                android:text="￭ 필수적 접근권한"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#303539" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp">
+
+                    <ImageView
+                        android:id="@+id/cameraIcon"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:background="@drawable/permission_camera" />
+                    <TextView
+                        android:id="@+id/permissionCamera"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/notosanscjkkr_medium"
+                        android:includeFontPadding="false"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@+id/cameraIcon"
+                        android:gravity="left"
+                        android:text="카메라 권한"
+                        android:textColor="#303539"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/permissionCamera"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@+id/cameraIcon"
+                        android:gravity="left"
+                        android:text="전력량계 촬영을 위해 사용됩니다."
+                        android:textColor="#aaa"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/storageIcon"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:background="@drawable/permission_storage" />
+                    <TextView
+                        android:id="@+id/permissionStorage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/notosanscjkkr_medium"
+                        android:includeFontPadding="false"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@+id/storageIcon"
+                        android:gravity="left"
+                        android:text="저장소 권한"
+                        android:textColor="#303539"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/permissionStorage"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@+id/storageIcon"
+                        android:gravity="left"
+                        android:text="촬영된 전력량계 사진 저장을 위해\n사용됩니다."
+                        android:textColor="#aaa"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/permission_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="다음"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:background="@color/activeColor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

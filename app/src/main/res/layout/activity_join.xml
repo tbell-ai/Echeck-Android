@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.activity.JoinActivity">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/border_radius"
+        android:elevation="15dp"
+        android:orientation="vertical"
+        android:paddingLeft="25dp"
+        android:paddingTop="15dp"
+        android:paddingRight="25dp"
+        android:paddingBottom="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include">
+
+        <TextView
+            android:id="@+id/echeck_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/notosanscjkkr_medium"
+            android:includeFontPadding="false"
+            android:maxLength="6"
+            android:text="아이디"
+            android:textColor="@color/blackText"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/echeck_id_input"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_input_task"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:hint="2~10자 영문, 숫자만 입력 "
+                android:includeFontPadding="false"
+                android:inputType="text"
+                android:maxLength="6"
+                android:paddingLeft="12dp"
+                android:textColor="@color/blackText"
+                android:textColorHint="#707070"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/id_check"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:layout_toEndOf="@+id/echeck_id_input"
+                android:background="@color/inactiveColor"
+                android:gravity="center"
+                android:padding="0dp"
+                android:text="중복확인"
+                android:textSize="10sp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/notosanscjkkr_medium"
+            android:includeFontPadding="false"
+            android:text="비밀번호"
+            android:textColor="@color/blackText"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/password_input"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_input_task"
+            android:clickable="true"
+            android:focusable="false"
+            android:fontFamily="@font/notosanscjkkr_medium"
+            android:hint="8~16자 영문 대소문자, 숫자, 특수문자 혼합"
+            android:includeFontPadding="false"
+            android:inputType="date"
+            android:paddingLeft="12dp"
+            android:textColor="@color/blackText"
+            android:textColorHint="@color/grayText"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/password_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/notosanscjkkr_medium"
+            android:includeFontPadding="false"
+            android:text="비밀번호 확인"
+            android:textColor="@color/blackText"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/password_confirm_input"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_input_task"
+            android:clickable="true"
+            android:focusable="false"
+            android:fontFamily="@font/notosanscjkkr_medium"
+            android:hint="입력한 비밀번호와 동일하게 입력"
+            android:includeFontPadding="false"
+            android:inputType="date"
+            android:paddingLeft="12dp"
+            android:textColor="@color/blackText"
+            android:textColorHint="@color/grayText"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/notosanscjkkr_medium"
+            android:includeFontPadding="false"
+            android:text="닉네임"
+            android:textColor="@color/blackText"
+            android:textColorHint="@color/grayText"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/nickname_input"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_input_task"
+            android:fontFamily="@font/notosanscjkkr_medium"
+            android:hint="2~6자 한글, 영문만 입력"
+            android:includeFontPadding="false"
+            android:inputType="number"
+            android:maxLength="5"
+            android:paddingLeft="12dp"
+            android:textColor="@color/blackText"
+            android:textColorHint="@color/grayText"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/notosanscjkkr_medium"
+            android:includeFontPadding="false"
+            android:text="이메일"
+            android:textColor="@color/blackText"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/email_input"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_input_task"
+            android:clickable="true"
+            android:focusable="false"
+            android:fontFamily="@font/notosanscjkkr_medium"
+            android:hint="이메일 형식(a@example.com)애 맞춰 입력"
+            android:includeFontPadding="false"
+            android:inputType="date"
+            android:paddingLeft="12dp"
+            android:textColor="@color/blackText"
+            android:textColorHint="@color/grayText"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/go_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="회원가입"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="#FFF"
+        android:background="@drawable/next_button_radius"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
